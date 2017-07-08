@@ -1,0 +1,8 @@
+{
+  "name": "hello-world",
+  "description": "A tiny script to check the behaivior of Lambda and Apex",
+  "memory": 128,
+  "timeout": 3,
+  "role": "arn:aws:iam::205176994941:role/lambda-hello-world",
+  "environment": {}
+}
