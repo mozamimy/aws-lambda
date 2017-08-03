@@ -1,0 +1,15 @@
+{
+  "name": "usapochi",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mozamimy (Moza USANE) <alice@mozami.me>",
+  "license": "MIT",
+  "dependencies": {
+    "request": ">=2.81.0",
+    "request-promise": ">=4.2.1"
+  }
+}

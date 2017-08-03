@@ -1,2 +1,2 @@
 const index = require('./index');
-index.handler(null, null);
+index.handle(null, null);
