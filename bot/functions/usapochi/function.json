@@ -1,0 +1,9 @@
+{
+  "runtime": "nodejs6.10",
+  "role": "arn:aws:iam::205176994941:role/lambda-usapochi",
+  "timeout": 10,
+  "environment": {
+    "URI": "https://www.amazon.co.jp/gp/digital/fiona/detail/request-kindle-edition/ref=dtp_dp_su_4866570091?ie=UTF8&a=4866570091",
+    "UA": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0"
+  }
+}
