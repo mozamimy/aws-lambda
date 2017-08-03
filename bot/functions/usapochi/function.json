@@ -1,0 +1,5 @@
+{
+  "runtime": "nodejs6.10",
+  "role": "arn:aws:iam::205176994941:role/lambda-usapochi",
+  "environment": {}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "bot",
+  "description": "Bot scripts",
+  "memory": 128,
+  "timeout": 3,
+  "environment": {}
+}
