@@ -2,7 +2,7 @@
 
 Lambda functions for my infrastructure and life.
 
-## deploy
+## Deploy
 
 Manage with [APEX](https://github.com/apex/apex). IAM roles should be created by other way before deploy functions.
 
@@ -14,7 +14,7 @@ $ apex logs hello-world
 $ apex metrics hello-world
 ```
 
-## functions
+## Functions
 
 ### hello-world
 
