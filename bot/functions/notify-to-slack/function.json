@@ -1,0 +1,9 @@
+{
+  "runtime": "nodejs6.10",
+  "role": "arn:aws:iam::205176994941:role/lambda-notify-to-slack",
+  "timeout": 5,
+  "kms_arn": "arn:aws:kms:ap-northeast-1:205176994941:key/0cb2e856-fc9a-43a4-a563-fc75c1b9f826",
+  "environment": {
+    "WEBHOOK_URL": "AQICAHi0OjKXcYOU2IF7gvq/IGUbgiAugIOcn2FlWz8oMLXabgENzXJqTuxEyTDXckbeHLBYAAAArzCBrAYJKoZIhvcNAQcGoIGeMIGbAgEAMIGVBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDJoQFwfjAQ2RxqzwWAIBEIBoN+TLZRcJqe5PppBZBYgjpKcSXEKj0eJ4Jo81SUzUFgTbFujhBryafotFiXlOVCd4oHDI4lKpuV0KsVydMMScMrcnAFCBUp5yEsd4XviD6J4rkdUGyvJf+RqQeZ1Kh7pm/i3FV1OSPB0="
+  }
+}
