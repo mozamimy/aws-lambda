@@ -1,0 +1,21 @@
+const index = require('./index');
+
+const event = {
+	"Records": [{
+		"EventSource": "aws:sns",
+		"EventVersion": "1.0",
+		"EventSubscriptionArn": "arn:aws:sns:ap-northeast-1:205176994941:send-notification:28c41dce-4cc8-4449-975f-c26e958a32d2",
+		"Sns": {
+			"Type": "Notification",
+			"MessageId": "47b8373e-263e-5f45-9d11-653ee4dbe7ba",
+			"TopicArn": "arn:aws:sns:ap-northeast-1:205176994941:send-notification",
+			"Subject": "Succeed to execute usapochi",
+			"Message": "{ \"Channel\": \"#batch-notification\", \"UserName\": \"usapochi\", \"IconEmoji\": \":rabbit2:\", \"Message\": \":rabbit2: :rabbit2: :rabbit2:\", \"Level\": \"info\" }",
+			"Timestamp": "2017-08-06T07:09:25.105Z",
+			"SignatureVersion": "1",
+			"MessageAttributes": {}
+		}
+	}]
+};
+
+index.handle(event, null);
