@@ -31,14 +31,30 @@ exports.handle = (event, context) => {
     console.info("Succeed to execute usapochi.");
     console.info(result);
 
-    return notify("Succeed to execute usapochi", ":rabbit2: :rabbit2: :rabbit2:", SNS_TOPIC_ARN);
+    const slackMessage = {
+      Channel: "#batch-notification",
+      UserName: "usapochi",
+      IconEmoji: ":rabbit2:",
+      Message: ":rabbit2: :rabbit2: :rabbit2:",
+      Level: "info",
+    };
+
+    return notify("Succeed to execute usapochi", JSON.stringify(slackMessage, null, 2), SNS_TOPIC_ARN);
   }).then((result) => {
     console.info(result);
     context.succeed(result);
   }).catch((err) => {
     console.error(err);
 
-    return notify("Failed to execute usapochi", err, SNS_TOPIC_ARN).then().catch((err) => {
+    const slackMessage = {
+      Channel: "#batch-notification",
+      UserName: "usapochi",
+      IconEmoji: ":rabbit2:",
+      Message: err,
+      Level: "fatal",
+    };
+
+    return notify("Failed to execute usapochi", JSON.stringify(slackMessage), SNS_TOPIC_ARN).then().catch((err) => {
       console.info(result);
       context.fail(err);
     }).catch((err) => {
